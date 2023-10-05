@@ -1,13 +1,17 @@
 import random
-# from pytest2 import get_random_number, a
-import pytest2
 import testdir
 random.seed(1337)
+
+a = 2
+ANKA = "duck"
+SCREEN_SIZE = "1028x1028"
+MAIN_COLOUR = "Red"
 
 
 def sum_variable_plus_one(x=5):
     """ Denna funktion summerar x med sina 3 efterföljande values"""
     increment_by_one_x_times = 4
+    print(ANKA)
     sum = 0
     for i in range(increment_by_one_x_times):
         sum = sum + x + i
@@ -61,8 +65,14 @@ def main():
     # sum_variable_plus_one(x=5)
     # teach_if(x=5)
     # teach_while_and_for_loop()
-    print(pytest2.get_random_number())
-    print(pytest2.a)
+    my_person = testdir.Person(age=20, name="Marie")
+
+    print("my persons age is: ", my_person.age)
+    print("my persons name is: ", my_person.name)
+
+
+def customized_multiplier(a, b):
+    return a*b*b
 
 
 if __name__ == "__main__":

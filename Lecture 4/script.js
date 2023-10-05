@@ -6,3 +6,8 @@ button.addEventListener('click', () => {
     main.style.backgroundColor = randomColor;
 });
 main.appendChild(button);
+
+// This is my function, it does things!
+const myfunc = () => {
+
+}

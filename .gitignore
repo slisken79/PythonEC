@@ -1,8 +1,2 @@
 # Ignore __pycache__ directories
-Lecture 3/__pycache__/
-
-# Ignore pyperson.py
-Lecture 3/pyperson.py
-
-# Ignore __pycache__ directories inside testdir
-Lecture 3/testdir/__pycache__/
+__pycache__
