@@ -1,1 +1,1 @@
-from my_person import Person
+from .my_person import Person

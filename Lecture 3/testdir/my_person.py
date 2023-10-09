@@ -16,7 +16,3 @@ class Person():
 
     def print_person_age(self):
         print(self.__age)
-
-
-my_person = Person()
-my_person.print_person_age()
