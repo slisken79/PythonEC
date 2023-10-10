@@ -1,14 +1,12 @@
 import random
-import testdir
-random.seed(1337)
+from testdir import Person
 
-a = 2
-ANKA = "duck"
+random.seed(1337)
 SCREEN_SIZE = "1028x1028"
 MAIN_COLOUR = "Red"
 
 
-def sum_variable_plus_one(x=5):
+def sum_variable_plus_one(x=5) -> int:
     """ Denna funktion summerar x med sina 3 efterföljande values"""
     increment_by_one_x_times = 4
     print(ANKA)
@@ -65,9 +63,9 @@ def main():
     # sum_variable_plus_one(x=5)
     # teach_if(x=5)
     # teach_while_and_for_loop()
-    my_person = testdir.Person(age=20, name="Marie")
+    my_person = Person(age=20, name="Marie")
 
-    print("my persons age is: ", my_person.age)
+    print("my persons age is: ", my_person.get_person_age())
     print("my persons name is: ", my_person.name)
 
 
